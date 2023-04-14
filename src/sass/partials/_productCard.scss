@@ -1,0 +1,27 @@
+.product-card {
+  position: relative;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  .product-logo {
+    margin: 16px 16px 16px 16px;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .precio {
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+  .shipping-logo {
+  }
+}
