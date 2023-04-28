@@ -8,6 +8,9 @@ const ProductDetailPage = () => {
   const { id } = useParams();
   const { data, isLoading } = useProducto(id);
   const producto = data?.item;
+  const categorias = producto?.category;
+
+  const listaCategorias = categorias?.map((categoria) => categoria).join(" > ");
 
   return (
     <>
@@ -15,9 +18,12 @@ const ProductDetailPage = () => {
         {id && (
           <>
             {isLoading ? (
-              <>Cargando detalle de producto seleccionado...</>
+              <>Cargando detalle del producto seleccionado... </>
             ) : (
-              <ProductDetail producto={producto} />
+              <>
+                <p className="categorias">{listaCategorias}</p>
+                <ProductDetail producto={producto} />
+              </>
             )}
           </>
         )}

@@ -22,4 +22,4 @@ export default App;
 //el element es el componente que se va a renderizar cuando el usuario acceda a la ruta path determinada
 //voy a tener una ruta que va a ser el search que se va a ejecutar cuando el cliente haga click en la lupa de la caja de busqueda,
 //mostrandole asi el resultado de la busqueda
-//el componente que se
+

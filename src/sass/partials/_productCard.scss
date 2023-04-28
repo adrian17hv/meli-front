@@ -1,27 +1,40 @@
 .product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px;
   position: relative;
-  background-color: #eeeeee;
-  border-bottom: 1px solid #666666;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  background-color: white;
+  border-radius: 4px;
 
-  .product-logo {
+  .producto-logo {
     margin: 16px 16px 16px 16px;
     height: 180px;
     width: 180px;
     border-radius: 4px;
   }
 
-  h2 {
-    margin: 0;
-    font-size: 18px;
-  }
+  .contenedor-info {
+    display: inline-block;
+    .producto-titulo {
+      color: #333333;
+      font-size: 18px;
+    }
 
-  .precio {
-    font-size: 24px;
-    margin-bottom: 32px;
-    margin-top: 0;
-  }
-  .shipping-logo {
+    .ubicacion {
+      color: #333333;
+      font-size: 12px;
+    }
+
+    .precio {
+      display: inline-block;
+      color: #333333;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    .shipping-logo {
+      margin-left: 16px;
+      display: inline-block;
+    }
   }
 }

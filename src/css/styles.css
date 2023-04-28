@@ -6,20 +6,28 @@
 }
 
 nav {
+  align-content: center;
   width: 100%;
   background-color: #ffe600;
   display: flex;
-  justify-content: center;
+}
+nav .contenedor-input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+nav .contenedor-input .meli-logo {
+  margin-top: 5px;
 }
 nav .contenedor-input input:focus {
   outline: none;
 }
 nav .contenedor-input input {
-  position: relative;
-  margin: 12px;
+  margin-left: 30px;
   margin-right: 0;
-  height: 40px;
+  height: 36px;
   width: 900px;
   font-size: 18px;
   border-style: hidden;
@@ -28,10 +36,8 @@ nav .contenedor-input input {
   padding-left: 18px;
 }
 nav .contenedor-input .boton-busqueda {
-  position: absolute;
-  margin-top: 12px;
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-style: hidden;
@@ -39,31 +45,111 @@ nav .contenedor-input .boton-busqueda {
 }
 
 .product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px;
   position: relative;
-  background-color: #eeeeee;
-  border-bottom: 1px solid #666666;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  background-color: white;
+  border-radius: 4px;
 }
-.product-card .product-logo {
+.product-card .producto-logo {
   margin: 16px 16px 16px 16px;
   height: 180px;
   width: 180px;
   border-radius: 4px;
 }
-.product-card h2 {
-  margin: 0;
+.product-card .contenedor-info {
+  display: inline-block;
+}
+.product-card .contenedor-info .producto-titulo {
+  color: #333333;
   font-size: 18px;
 }
-.product-card .precio {
+.product-card .contenedor-info .ubicacion {
+  color: #333333;
+  font-size: 12px;
+}
+.product-card .contenedor-info .precio {
+  display: inline-block;
+  color: #333333;
   font-size: 24px;
   margin-bottom: 32px;
-  margin-top: 0;
 }
+.product-card .contenedor-info .shipping-logo {
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-rows: 680px 320px;
+  grid-template-columns: 680px 320px;
+  background-color: white;
+  border-radius: 4px;
+}
+.contenedor-principal .foto-producto {
+  margin-top: 16px;
+  border-radius: 4px;
+  height: 680px;
+  width: 680px;
+}
+.contenedor-principal .detalle-producto {
+  margin-left: 16px;
+}
+.contenedor-principal .detalle-producto .condicion {
+  color: #333333;
+  margin-top: 32px;
+  font-size: 14px;
+}
+.contenedor-principal .detalle-producto .titulo-producto {
+  color: #333333;
+  margin-right: 32px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+.contenedor-principal .detalle-producto .precio {
+  color: #333333;
+  margin-bottom: 32px;
+  font-size: 46px;
+}
+.contenedor-principal .detalle-producto .precio .decimal {
+  font-size: 23px;
+}
+.contenedor-principal .detalle-producto .boton-comprar {
+  cursor: pointer;
+  margin-right: 32px;
+  width: 160px;
+  height: 30px;
+  background-color: #3483fa;
+  color: white;
+  border-style: hidden;
+  border-radius: 4px;
+}
+.contenedor-principal .contenedor-parrafo {
+  margin-top: 100px;
+  margin-left: 32px;
+}
+.contenedor-principal .contenedor-parrafo .titulo-descripcion-parrafo {
+  color: #333333;
+  margin-bottom: 32px;
+  font-size: 28px;
+}
+.contenedor-principal .contenedor-parrafo .descripcion-parrafo {
+  color: #333333;
+  font-size: 16px;
+}
+
 .page-wrapper {
   max-width: 1000px;
-  border-radius: 4px;
   margin: auto;
+}
+.page-wrapper .categorias {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #333333;
 }
 
 /*# sourceMappingURL=styles.css.map */

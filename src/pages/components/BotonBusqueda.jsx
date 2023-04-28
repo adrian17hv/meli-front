@@ -22,4 +22,4 @@ export default BotonBusqueda;
 //el value lo traigo de la url y lo utilizo como un param en la link de react router
 //con react router hago la funcion para redireccionar a la url con el value del search
 //el onClick llama a la funcion handleClick, que a su vez ejecuta ...
-//
+
