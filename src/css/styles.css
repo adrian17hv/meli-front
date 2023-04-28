@@ -47,7 +47,6 @@ nav .contenedor-input .boton-busqueda {
 .product-card {
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-bottom: 2px;
   position: relative;
   background-color: white;
@@ -60,6 +59,7 @@ nav .contenedor-input .boton-busqueda {
   border-radius: 4px;
 }
 .product-card .contenedor-info {
+  margin-top: 32px;
   display: inline-block;
 }
 .product-card .contenedor-info .producto-titulo {
