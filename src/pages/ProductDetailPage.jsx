@@ -14,7 +14,7 @@ const ProductDetailPage = () => {
 
   return (
     <>
-      <div className="page-wrapper">
+      <div className="page-wrapper page-wrapper--margin-bottom">
         {id && (
           <>
             {isLoading ? (

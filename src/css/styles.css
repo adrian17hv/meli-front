@@ -83,7 +83,6 @@ nav .contenedor-input .boton-busqueda {
 
 .contenedor-principal {
   display: grid;
-  grid-template-rows: 680px 320px;
   grid-template-columns: 680px 320px;
   background-color: white;
   border-radius: 4px;
@@ -130,6 +129,7 @@ nav .contenedor-input .boton-busqueda {
 .contenedor-principal .contenedor-parrafo {
   margin-top: 100px;
   margin-left: 32px;
+  padding-bottom: 64px;
 }
 .contenedor-principal .contenedor-parrafo .titulo-descripcion-parrafo {
   color: #333333;
@@ -144,6 +144,12 @@ nav .contenedor-input .boton-busqueda {
 .page-wrapper {
   max-width: 1000px;
   margin: auto;
+}
+.page-wrapper--margin-bottom {
+  padding-bottom: 64px;
+}
+.page-wrapper--margin-bottom > .contenedor-principal {
+  box-shadow: 0px 1px 1px 1px #ccc;
 }
 .page-wrapper .categorias {
   margin-top: 16px;
