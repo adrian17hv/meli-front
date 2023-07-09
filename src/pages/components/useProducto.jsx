@@ -28,7 +28,7 @@ function useProducto(id) {
 export default useProducto;
 
 //el useEffect hace un request cuando el ID cambia
-//primero setea el el estado de loading a true y limpia cualquier data seteando un array vacio
+//primero setea el estado de loading a true y limpia cualquier data seteando un array vacio
 //luego hace una peticion HTTP GET al server local con un parametro dinamico del ID value que esta en el URL
 //si el request es exitoso el response.data se guarda en el estado del componente usando la funcion setData()
 //si hay un error se imprime en la pantalla error
