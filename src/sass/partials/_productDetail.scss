@@ -1,6 +1,5 @@
 .contenedor-principal {
   display: grid;
-  grid-template-rows: 680px 320px;
   grid-template-columns: 680px 320px;
   background-color: white;
   border-radius: 4px;
@@ -51,6 +50,7 @@
   .contenedor-parrafo {
     margin-top: 100px;
     margin-left: 32px;
+    padding-bottom: 64px;
 
     .titulo-descripcion-parrafo {
       color: #333333;
