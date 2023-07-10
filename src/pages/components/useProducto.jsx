@@ -9,7 +9,7 @@ function useProducto(id) {
     setIsloading(true);
     setData([]);
     axios
-      .get(`http://localhost:8000/items/${id}`)
+      .get(`${process.env.REACT_APP_BASE_URL}/items/${id}`)
       .then((response) => {
         console.log(response.data);
         setData(response.data);
