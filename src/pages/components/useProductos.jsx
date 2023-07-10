@@ -10,7 +10,7 @@ export function useProductos(search) {
     setData([]);
 
     axios
-      .get(`http://localhost:8000/items?search=${search}`)
+      .get(`${process.env.REACT_APP_BASE_URL}/items?search=${search}`)
       .then((response) => {
         console.log(response.data);
         setData(response.data);
