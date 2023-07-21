@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export function useProductos(search) {
+function useProductos(search) {
   const [data, setData] = useState(null);
   const [isLoading, setIsloading] = useState(true);
 
