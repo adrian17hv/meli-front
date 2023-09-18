@@ -34,7 +34,7 @@ const ProductDetailPage = () => {
 
 export default ProductDetailPage;
 
-//me importo el hook personalizado y de ahi utulizo data y isLoading
-//data y isLoading son las variables que contienen el valor del estado
+//me importo el hook personalizado y de ahi utilizo data e isLoading
+//data e isLoading son las variables que contienen el valor del estado
 //en el hook isLoading esta seteado a true y data a null
 //el hook customizado useProducto recibe como parametro un ID
